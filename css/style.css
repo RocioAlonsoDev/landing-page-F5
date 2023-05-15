@@ -1,0 +1,340 @@
+body{
+    margin:0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* HEADER */
+nav{
+  padding: 0px;
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+ul {
+    margin: 5px;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+}
+a{
+  text-decoration: none;
+  color: #0e0f3f;
+}
+a:hover{
+  color: white;
+}
+ul li{
+  font-size: 30px;
+  padding: 10px;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color: #d4697d;
+    z-index:3;
+}
+#logo-top {
+    height: 80px;
+    border-radius: 10px;
+}
+.ul-nav-nosotras,.ul-nav-herramientas{
+  margin-left: 40px;
+}
+
+
+/*BANNER*/
+#banner{
+    padding-top:85px;
+}
+#banner img{
+    padding: 0;
+    margin: 0;
+}
+#banner img{
+    width: 100%;
+}
+#slogan{
+    position: absolute;
+    left: 10%;
+    top: 20vh;
+}
+#slogan,#sloganXs{
+    color: white;
+    font-size: 2vw;
+    border-left:white solid 3px;
+    padding-left: 5%;
+}
+#sloganXsCont{
+    display:none;
+}
+@media only screen and (max-width: 680px) {
+      #sloganXs{
+          display: block;
+          font-size: 3vh;
+          margin: 0;
+          padding: 0;
+          margin-top: 100px;
+      }
+      #sloganXsCont{
+          display: flex;
+          justify-content: center;
+          background-color: #d4697d;
+          padding: 5%;
+      }
+      #slogan,#lineas1,#lineas2{
+          display: none;
+      }
+  }
+.lineas{
+    background: repeating-linear-gradient(
+        -45deg,
+        transparent 0 10px,
+        rgb(255, 255, 255) 3px 13px
+      );
+}
+    #lineas1{
+    position: absolute;
+    left: 32%;
+    top: 20vh;
+    height: 10vw;
+    width:5%;
+}
+    #lineas2{
+    position: absolute;
+    right:0;
+    top: 20vh;
+    height: 10vw;
+    width:14.5%;
+}
+#lineas3{
+    width: 30%;
+    margin-left: 2%;
+    margin-top: 100px;
+}
+
+/*BAJOBANNER*/
+/*equipo*/
+#bajoBanner{
+    margin-top:-5px;
+    padding-top:250px;
+    background: linear-gradient(#d9798b,#dd704f,#dd704f,#d9798b,#d9798b);
+    width: 100%;
+}
+#equipo{
+    margin-right: 5%;
+    margin-left: 5%;
+    border: #6F3873 solid 5px;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5%;
+}
+#equipo h2{
+    background-color: #0E0F3E;
+    border-radius: 2px;
+    border: transparent solid 5px;
+    color: #6F3873;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:-130px;
+    width:fit-content;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.perfiles{
+	display: flex;
+	justify-content: space-evenly;
+	flex-flow: row wrap;
+}
+.wrapper{
+  justify-content: center;
+  align-self: center;
+
+}
+.container{
+  width: 280px;
+  height: 500px;
+  background: #bd8697f0;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  margin: 50px 0px;
+}
+
+.container:hover{
+	width: 280px;
+	background: #c65a7d96;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 10px 20px 0 rgba(52, 5, 80, 0.354), 0 10px 20px 0 rgba(109, 40, 141, 0.331);
+  }
+
+.container .profile-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -65px;
+  left: 85px;
+  border: 5px solid #dee0e1;
+}
+
+.container .profile-img:hover{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+    position: absolute;
+    top: -155px;
+    left: 40px;
+    border: 5px solid #dee0e1;
+}
+
+.content{
+  padding: 65px 20px 20px;
+}
+
+.content .sub-content{
+  text-align: center;
+}
+
+.content .sub-content h1{
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #191a1beb;
+}
+
+.content .sub-content span{
+  font-size: 12px;
+  color: #494949;
+  margin-bottom: 20px;
+}
+
+.content .sub-content p{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+.content .sub-content span.preguntas{
+  display: block;
+  margin: 0 0 0 5px;
+  font-weight: bolder;
+  color: black;
+  }
+
+.content .sub-content span.respuestas .fa{
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.content .sub-content a{
+  color: #0d0d0dea;
+}
+
+.data{
+  width: 100%;
+  margin: 30px 0 10px;
+}
+
+.inner-data{
+  width: 33.3%;
+  float: left;
+  text-align: center;
+}
+
+.inner-data span .fa{
+  font-size: 30px;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #080808c0;
+}
+
+.btn{
+    margin-top: 20px;
+    clear: both;
+    text-align: center;
+    width: 100%;
+    height: 35px;
+    background: #080808;
+   color: #fff;
+  text-transform: uppercase;
+  line-height:38px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/*BARRA MY SOCIAL BATERRY*/
+progress {
+    border:solid black;
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+  }
+  
+  progress {
+    color: #6F3873;
+    border-radius: 50px;
+  }
+  
+  /*Esto establece un pseudo-elemento que afecta la barra de progreso de Webkit, que se utiliza en navegadores basados en Webkit como Safari y Chrome.*/
+  progress::-webkit-progress-value {
+    background-color: #6F3873;
+    border-radius: 50px;
+  }
+  /*Esto establece un pseudo-elemento que afecta la barra de progreso de Mozilla, que se utiliza en navegadores basados en Mozilla como Firefox.*/
+  progress::-moz-progress-bar {
+    background-color: #6F3873;
+    border-radius: 50px;
+  }
+  /*BARRA MY SOCIAL BATERRY*/
+
+/*herramientas*/
+
+#herramientas{
+    margin-top: 250px;
+}
+#herramientas h2{
+    color: #1e1f6b;
+    text-align: center;
+    font-size: 30px;
+}
+#contenedorTools{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+}
+.circulo{
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+}
+.circulo img{
+    width: 100%;
+    align-self: center;
+}
+
+/*FOOTER*/
+.logo-bottom{
+	width: 150px;
+	display: inline-block; 
+  padding: 20px;;
+}
+footer{
+	width: 100%;
+	background-color: #0e0f3f;
+	color: white;
+	text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
